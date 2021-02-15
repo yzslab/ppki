@@ -1,0 +1,24 @@
+{
+    "name": "yzslab/ppki",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.0",
+        "ext-openssl": "*",
+        "symfony/console": "^5.2",
+        "symfony/dependency-injection": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "YZSLAB\\PPKI\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}
