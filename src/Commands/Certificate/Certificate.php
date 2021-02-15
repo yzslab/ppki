@@ -56,7 +56,7 @@ abstract class Certificate extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         // Key exists check
-        if ($this->CACertificateStorage->isCertificateExists($input->getArgument("name")) && !$input->getOption("override")) {
+        if ($this->getCertificateStorage()->isCertificateExists($input->getArgument("name")) && !$input->getOption("override")) {
             $output->writeln("Certificate " . $input->getArgument("name") . " already exists, add --override option override it");
             return Command::FAILURE;
         }
